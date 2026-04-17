@@ -1,0 +1,50 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+```
+
+#### Schema.org Structured Data
+
+We will add schema.org structured data to the `index.html` file to provide additional context to search engines:
+```html
+<head>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Task List App",
+    "description": "A simple task list app that allows users to add, delete, and mark tasks as complete",
+    "url": "https://example.com/task-list-app",
+    "image": "https://example.com/task-list-app-logo.png"
+  }
+  </script>
+</head>
+```
+
+#### Semantic HTML
+
+We will improve the semantic HTML of the `index.html` file by using proper heading hierarchy, and using `main`, `nav`, `article`, `section`, and `footer` elements:
+```html
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h1>Task List App</h1>
+      <p>A simple task list app that allows users to add, delete, and mark tasks as complete</p>
+    </article>
+  </main>
+  <footer>
+    <p>&copy; 2024 Task List App</p>
+  </footer>
+</body>
+```
+
+By implementing these SEO enhancements, we can improve the visibility and ranking of the Task List App website on search engines, and provide a better user experience for our users.

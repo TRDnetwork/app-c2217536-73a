@@ -1,0 +1,37 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Critical above-the-fold CSS */
+        body {
+            background-color: #2f2f2f;
+            font-family: Lato, sans-serif;
+            color: #ffffff;
+        }
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="loading">Loading...</div>
+    <div class="app" style="display: none;">
+        <h1>Task List</h1>
+        <input type="text" id="task-input" placeholder="Enter a task">
+        <button id="add-task-btn">Add Task</button>
+        <ul id="task-list"></ul>
+        <button id="sign-out-btn" style="display: none;">Sign Out</button>
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
+```
